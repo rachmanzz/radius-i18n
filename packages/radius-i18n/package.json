@@ -1,0 +1,28 @@
+{
+  "name": "radius-i18n",
+  "version": "0.0.1",
+  "packageManager": "yarn@4.5.2",
+  "type": "module",
+  "bin": {
+    "translate": "dist/bin/translate.mjs"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "test": "echo 'Write tests!'"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.3.0",
+    "@rollup/plugin-typescript": "^12.1.1",
+    "@types/node": "^22.10.1",
+    "@typescript-eslint/eslint-plugin": "^8.16.0",
+    "@typescript-eslint/parser": "^8.16.0",
+    "eslint": "^9.15.0",
+    "rollup": "^4.27.4",
+    "tslib": "^2.8.1",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@google-cloud/vertexai": "^1.9.0",
+    "chalk": "^5.3.0"
+  }
+}

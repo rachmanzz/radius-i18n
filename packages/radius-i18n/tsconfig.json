@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",        // ES module output
+    "target": "ESNext",        // Target latest ECMAScript version
+    "moduleResolution": "node",
+    "outDir": "./dist",        // Direct all outputs to dist
+    "allowJs": false,          // Disable JS files from being compiled
+    "esModuleInterop": true    // Ensure compatibility with ES modules
+  },
+  "include": ["src/**/*.ts"],   // Include TypeScript files
+  "exclude": ["node_modules", "dist"]  // Exclude unnecessary directories
+}
