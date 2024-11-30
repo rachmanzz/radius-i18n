@@ -2516,7 +2516,7 @@ __metadata:
     tslib: "npm:^2.8.1"
     typescript: "npm:^5.7.2"
   bin:
-    translate: dist/bin/index.mjs
+    radius-translate: dist/bin/index.mjs
   languageName: unknown
   linkType: soft
 
