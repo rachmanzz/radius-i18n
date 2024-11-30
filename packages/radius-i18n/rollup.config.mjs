@@ -4,6 +4,7 @@ import  terser  from "@rollup/plugin-terser";
 import copy from 'rollup-plugin-copy'
 import commonjs from '@rollup/plugin-commonjs';
 import json from '@rollup/plugin-json'; 
+import { builtinModules } from 'module';
 
 export default {
   input: 'src/bin/index.ts', // Specify the input file here
@@ -16,7 +17,10 @@ export default {
       entryFileNames: '[name].mjs',  // Add this line to ensure the file extension is .mjs
     }
   ],
-  external: ['google-auth-library', 'navigator', 'window', 'document'],
+  external: [
+    ...builtinModules,
+    /node_modules/
+  ],
   plugins: [
     commonjs(),
     resolve({preferBuiltins: true, browser: false}),  // Resolves external dependencies
