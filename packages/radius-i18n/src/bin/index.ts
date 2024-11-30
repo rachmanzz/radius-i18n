@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { readFileJSON } from "../helper/file";
 import { logError } from "../helper/logger";
 import { waitForInput } from "../input-handler";
