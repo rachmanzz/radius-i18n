@@ -1,6 +1,6 @@
 {
   "name": "radius-i18n",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "packageManager": "yarn@4.5.2",
   "type": "module",
   "bin": {
@@ -9,6 +9,9 @@
   "scripts": {
     "build": "rollup -c"
   },
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
     "@rollup/plugin-commonjs": "^28.0.1",
     "@rollup/plugin-json": "^6.1.0",
