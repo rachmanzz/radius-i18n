@@ -35,8 +35,11 @@ export const createAIContent = (c: { baseLang: string, locales: string[] }, inst
 export const generateAIContent = async (content: string) => {
 
     try {
+        const baseLang = process.env["RADIUS_LOCALE_BASE"] ?? "en"
+        const locales = process.env["RADIUS_LOCALES"] ?? "en"
+        const createdContent = createAIContent({baseLang, locales: locales.split(",")}, content)
         const result = await generativeModel.generateContent({
-            contents: [{ role: 'user', parts: [{ text: content }] }]
+            contents: [{ role: 'user', parts: [{ text: createdContent }] }]
         });
         const data = result.response
         if (data.candidates && data.candidates.length >= 1 && data.candidates[0].content.parts.length >= 1) {
