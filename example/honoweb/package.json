@@ -1,0 +1,17 @@
+{
+  "name": "honoweb",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "translate": "translate"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.13.7",
+    "hono": "^4.6.12"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.17",
+    "radius-i18n": "*",
+    "tsx": "^4.7.1"
+  }
+}
