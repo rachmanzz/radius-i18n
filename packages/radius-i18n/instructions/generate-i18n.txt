@@ -50,7 +50,7 @@ The instructions will be provided in the following format:
 ]
 ```
 
-If the "data" field is not null, it means there's a note to help with the translation. The "lang" field in "data" specifies the language of the note and the language of the current item.
+If the "data" field is not null, it means there's a note to help with the translation. The "lang" field in "data" specifies the language of the note.
 
 If the `validateKey` is set to `true`, you are allowed to correct the key if it does not follow the camelCase convention or if it can be improved for clarity or consistency.
 
