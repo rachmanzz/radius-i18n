@@ -7,14 +7,14 @@ import json from '@rollup/plugin-json';
 import { builtinModules } from 'module';
 
 export default {
-  input: 'src/bin/index.ts', // Specify the input file here
+  input: 'src/bin/index.ts', 
   output: [
     {
-      dir: 'dist',  // Output directory
-      format: 'esm',  // ES Module format
-      preserveModules: true,  // Keep modules separated
-      preserveModulesRoot: 'src',  // Maintain the structure
-      entryFileNames: '[name].mjs',  // Add this line to ensure the file extension is .mjs
+      dir: 'dist',  
+      format: 'esm', 
+      preserveModules: true,  
+      preserveModulesRoot: 'src',  
+      entryFileNames: '[name].mjs',
     }
   ],
   external: [
@@ -23,8 +23,8 @@ export default {
   ],
   plugins: [
     commonjs(),
-    resolve({preferBuiltins: true, browser: false}),  // Resolves external dependencies
-    typescript({ tsconfig: './tsconfig.json' }),  // TypeScript plugin,
+    resolve({preferBuiltins: true, browser: false}), 
+    typescript({ tsconfig: './tsconfig.json' }), 
     json(), 
     terser(),
     copy({
