@@ -3,7 +3,7 @@
   "type": "module",
   "scripts": {
     "dev": "tsx watch src/index.ts",
-    "translate": "translate"
+    "translate": "radius-translate -A"
   },
   "dependencies": {
     "@hono/node-server": "^1.13.7",
