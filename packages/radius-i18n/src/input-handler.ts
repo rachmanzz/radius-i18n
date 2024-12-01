@@ -40,7 +40,7 @@ const checkChangeState = async () => {
 };
 
 const exitProgram = () => {
-    console.log('Program dihentikan.');
+    console.log('radius exit');
     rl.close();
     process.exit()
 };
@@ -73,6 +73,13 @@ const autoCheckState = (freze: number = 1000) => {
 };
 
 export const waitForInput = () => {
+
+    const isArgAThere = process.argv.slice(2).includes('-A');
+    if (isArgAThere) {
+        autoCheckState()
+        return
+    }
+
     logInfo('Press "T" for manual translation');
     logWarning('Press "A" for automated translation');
     logError('Press "Q" to quit');
