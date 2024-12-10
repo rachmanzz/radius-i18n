@@ -1,6 +1,6 @@
 {
   "name": "radius-i18n",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "packageManager": "yarn@4.5.2",
   "type": "module",
   "bin": {
