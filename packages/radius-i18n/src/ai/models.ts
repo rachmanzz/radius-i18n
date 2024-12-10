@@ -26,7 +26,6 @@ export const createAIContent = (c: { baseLang: string, locales: string[] }, inst
     if (content) {
         content = content.replaceAll("{{content}}", instructionContent)
             .replaceAll("{{locales}}", c.locales.join(", "))
-            .replaceAll("{{baseLanguage}}", c.baseLang)
     }
     return content
 }
