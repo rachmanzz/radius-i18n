@@ -1,3 +1,8 @@
 {
-  "helloWorld": "Hello, World!"
+  "homeNavLabel": "Home",
+  "adminNavLabel": "Admin",
+  "profileNavLabel": "Profile",
+  "subtitleHeader": "Advanced machine solutions",
+  "loginBtn": "Login",
+  "registerBtn": "Register"
 }

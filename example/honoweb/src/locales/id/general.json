@@ -1,3 +1,13 @@
 {
-  "helloWorld": "Halo, Dunia!"
+  "helloWorld": "Halo, Dunia!",
+  "buttonSign": "Daftar",
+  "buttonLogin": "Masuk",
+  "wellcomeToClinic": "Selamat datang di Klinik",
+  "logoutButton": "Keluar",
+  "homeNavLabel": "Beranda",
+  "adminNavLabel": "Admin",
+  "profileNavLabel": "Profil",
+  "subtitleHeader": "Solusi mesin canggih",
+  "loginBtn": "Masuk",
+  "registerBtn": "Daftar"
 }
