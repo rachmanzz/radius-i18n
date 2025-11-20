@@ -62,7 +62,7 @@ const autoCheckState = (freze: number = 1000) => {
             countAutomation++;
             const waitForFreeze = Number(process.env["RADIUS_WAIT_FOR_FREEZE"] ?? "20")
             if (countAutomation === waitForFreeze) {
-                const freezeIn = Number(process.env["RADIUS_FREEZE_IN"] ?? "20000")
+                const freezeIn = Number(process.env["RADIUS_FREEZE_IN"] ?? "10000")
                 logInfo(`Automation freeze for ${freezeIn} miliseconds`);
                 clearInterval(autoProcessInterval!);
                 autoCheckState(freezeIn);
